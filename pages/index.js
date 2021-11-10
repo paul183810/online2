@@ -43,7 +43,7 @@ export default function Home(props) {
         ))}
       </Carousel>
 
-      <Typography variant="h2">Popular Products 1</Typography>
+      <Typography variant="h2">Popular Products</Typography>
       <Grid container spacing={3}>
         {topRatedProducts.map((product) => (
           <Grid item md={4} key={product.name}>

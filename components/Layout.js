@@ -138,7 +138,11 @@ export default function Layout({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
+        <title>
+          {title
+            ? `${title} - Cotswold Marble and Granite`
+            : 'Cotswold Marble and Granite'}
+        </title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme}>
@@ -156,7 +160,9 @@ export default function Layout({ title, description, children }) {
               </IconButton>
               <NextLink href="/" passHref>
                 <Link>
-                  <Typography sx={classes.brand}>amazona</Typography>
+                  <Typography sx={classes.brand}>
+                    Cotswold Marble and Granite
+                  </Typography>
                 </Link>
               </NextLink>
             </Box>
